@@ -2,24 +2,33 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Miguel Ferreira">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+
 		<link rel="icon" type="image/svg" href="./assets/img/dev-svgrepo-com.svg" />
+
+		<link rel="stylesheet" href="./assets/css/style.css">
+
 		<title>Contato</title>
 	</head>
 
 	<body>
 		
 		<header>
-			<div id="header_content">
+			<div id="header_content" class="flex">
+
 				<div id="titulo">
+
 					<h1>Miguel Ferreira</h1>
+
 				</div>
 
 				<div id="menu">
 					<nav>
+
 						<ul id="menu">
 							<li>
 								<a href="index.html"> Home </a>
@@ -38,7 +47,7 @@
 
 		<main>
 
-            <section id="contact">
+            <section id="contact" class="flex">
 
                 <form action="#" method="submit" id="formulario">
                     <label for="nome">Nome: </label>
@@ -83,18 +92,24 @@
 					<button type="submit">Enviar</button>
                 </form>
 
-                <article id="mapa">
+                <article id="mapa" class="flex_start">
 
-                    <p>Capão Redondo</p>
-	            	<p>São Paulo - SP</p>
+					<div>
+                    	<p>Itapecerica da Serra</p>
+	            		<p>São Paulo - SP</p>
+					</div>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233752.06890842025!2d-47.016116568225236!3d-23.733964905183164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfad63bcaa3ec5%3A0xcb5cbf33fd10fd27!2sItapecerica%20da%20Serra%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1752771507942!5m2!1spt-BR!2sbr" 
-						width="600" 
-						height="450" 
+                    <iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233752.06890842025!2d-47.016116568225236!3d-23.733964905183164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfad63bcaa3ec5%3A0xcb5cbf33fd10fd27!2sItapecerica%20da%20Serra%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1752771507942!5m2!1spt-BR!2sbr" 
+						width="400" 
+						height="250" 
 						style="border:0;" 
 						allowfullscreen="" 
-						loading="lazy" 
-						referrerpolicy="no-referrer-when-downgrade"
+						aria-hidden="false"
+						tabindex="0"
+						id="mapa"
+						onmousemove="mapaZoom()"
+						onmouseout="mapaNormal()"
 					>
 					</iframe>
     
@@ -104,7 +119,7 @@
 
 		</main>
 
-		<footer>
+		<footer class="flex">
 
             <section id="redes_sociais">
 
@@ -121,7 +136,7 @@
             </section>
 
 			<h3>
-				Feito com 🎶👺 por Miguel Ferreira - 2025
+				Feito com 🎶 por Miguel Ferreira - 2025
 			</h3>
 
 		</footer>
