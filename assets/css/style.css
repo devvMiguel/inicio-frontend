@@ -119,6 +119,7 @@ p{
 
 .img_profile{
     width: 200px;
+    border-radius: 50%;
 }
  
 /* Estilização da Seção Video */
@@ -251,13 +252,6 @@ form button:hover {
     flex-direction: column;
 }
 
-.projeto img {
-  width: 450px;
-  max-width: 90vw;
-  border-radius: 12px;
-
-}
-
 h3 {
   color: var(--black-800);
   font-size: 2rem;
@@ -280,4 +274,29 @@ h3 {
 
 .botao:hover {
 background: var(--purple-500);
+}
+
+.projeto_container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.projeto_container img {
+    width: 35vw;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projeto a {
+    margin: 0 auto;
+}
+
+.projeto p {
+    margin-left: 15%;
+    margin-right: 15%;
 }
