@@ -18,7 +18,7 @@
 	<body>
 		
 		<header>
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<div id="titulo">
 					<h1>Miguel Ferreira</h1>
 				</div>
@@ -43,20 +43,17 @@
 
 		<main>
 
-			<section id="projetos">
+			<section id="about">
 
 				<h2>&lt;/Meus Projetos&gt;</h2>
 
-				<div id="lista_projetos">	
+				<div id="lista_projetos" class="flex_container">	
 					
-					<article id="projeto_texto">
-					<img
-						src="./assets/img/projeto-blog-pessoal.jpg"
-						alt="Foto do projeto 1 do criador"
-					/>
-
 					<h3>Blog Pessoal</h3>
 
+					<section class="projeto" class="flex">
+					<img src="./assets/img/projeto-blog-pessoal.jpg" alt="Imagem do Projeto Blog Pessoal" />
+					
 						<p>
 							Este projeto é uma API REST desenvolvida
 							com NestJS, com foco em autenticação segura,
@@ -64,59 +61,56 @@
 							de postagens, temas e controle de permissões.
 							Ideal para servir como back-end de um blog pessoal.
 						</p>
-
-						<a href="https://github.com/devvMiguel/blog-pessoal"
-						target="_blank" 
-						class="botao">Repositório Aqui</a>
-
-					</article>
 					
-					<article id="projeto2_texto">
-					<img
-						src="./assets/img/projeto-sistema-delivery.jpg"
-						alt="Foto do projeto 2 do criador"
-					/>
-
+					<a class="botao" href="https://github.com/devvMiguel/blog-pessoal" target="_blank">Repositório</a>
+					</section>
+					
 					<h3>Sistema Delivery</h3>
 
-						<p>
-							Contribui neste projeto que o objetivo foi desenvolver
-							um sistema para organizar o dia a dia de restaurantes
-							e lanchonetes, permitindo cadastrar novos produtos
-							e usuários, com uma funcionalidade especial de
-							pesquisa para clientes com restrições alimentares.
-						</p>
+					<section class="projeto" class="flex">
+						<img src="./assets/img/projeto-sistema-delivery.jpg" alt="Imagem do Projeto Sistema-delivery" />
+						
+							<p>
+								Contribui neste projeto que o objetivo foi desenvolver
+								um sistema para organizar o dia a dia de restaurantes
+								e lanchonetes, permitindo cadastrar novos produtos
+								e usuários, com uma funcionalidade especial de
+								pesquisa para clientes com restrições alimentares.
+							</p>
+						
+						<a class="botao" href="https://github.com/Grupo-02-Turma-JavaScript-07/Sistema-delivery" target="_blank">Repositório</a>
+					</section>
 
-						<a href="https://github.com/Grupo-02-Turma-JavaScript-07/Sistema-delivery"
-						target="_blank" 
-						class="botao">Repositório Aqui
-						</a>
-					</article>
 				</div>
 			</section>
 		</main>
 
-		<footer>
+		<footer class = "flex">
 
             <section id="redes_sociais">
 
                     <a href="https://www.linkedin.com/in/ferreir4miguel/">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn"
+						class ="social_icon" />
                     </a>
+					
                     <a href="https://github.com/devvMiguel">
-                        <img src="assets/img/github.svg" alt="Github" />
+                        <img src="assets/img/github.svg" alt="Github"
+						class ="social_icon" />
                     </a>
+
                     <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
+						<img src="assets/img/instagram.svg" alt="Instagram"
+						class ="social_icon" />
+					</a>
 
             </section>
 
 			<h3>
 				Feito com 🎶 por Miguel Ferreira - 2025
 			</h3>
-
-		</footer>
-
+        
+        </footer>
+        
 	</body>
 </html>

@@ -243,3 +243,41 @@ form button:hover {
     text-align: justify;
     font-weight: 600;
 }
+
+/* Estilização do Projeto.html */
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto img {
+  width: 450px;
+  max-width: 90vw;
+  border-radius: 12px;
+
+}
+
+h3 {
+  color: var(--black-800);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+}
+
+.botao {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: var(--purple-800);
+    border: 1px solid var(--purple-500);
+    color: var(--white);
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.botao:hover {
+background: var(--purple-500);
+}
