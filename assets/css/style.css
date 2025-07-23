@@ -32,6 +32,10 @@ body {
     color: var(--black-800);
 }
 
+main {
+    min-height: 80vh;
+}
+
 /* Definindo as configurações de títulos e paragrafo */
 h1{
     color: var(--white);
